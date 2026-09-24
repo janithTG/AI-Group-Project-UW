@@ -219,3 +219,7 @@ __marimo__/
 
 .env
 .env.local
+
+# macOS
+.DS_Store
+**/.DS_Store
