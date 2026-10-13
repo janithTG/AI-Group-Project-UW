@@ -1,0 +1,2 @@
+Model,Accuracy,Macro Precision,Macro Recall,Macro F1,Weighted F1,Test Errors
+Decision Tree,0.99985,0.9998703009391555,0.9992679511273,0.9995688849912937,0.9998499724845679,3
