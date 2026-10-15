@@ -545,6 +545,9 @@ src/
 tests/
     project tests if required
 
+scripts/
+    demo_inference.py
+
 requirements.txt
 
 README.md
@@ -653,6 +656,23 @@ and execute the notebooks in numerical order.
 ```bash
 deactivate
 ```
+
+## Quick Demo (Synthetic Inference)
+
+After setup, activate the virtual environment, then run a tiny demo that creates ten random synthetic samples and predicts with the saved final model:
+
+```bash
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python scripts/demo_inference.py
+```
+
+Or without activating:
+
+```bash
+.venv/bin/python scripts/demo_inference.py
+```
+
+Each run generates new random samples within realistic dataset ranges. The script also shows the expected label from the known threshold rule, whether the model matched, prediction confidence, and the batch accuracy / error rate. Most runs are mostly/fully correct; a difficult near-boundary case is injected only sometimes.
 
 ## Reproducing the Experiment
 
